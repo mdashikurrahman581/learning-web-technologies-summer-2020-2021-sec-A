@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree</title>
+</head>
+
+<body>
+    <table border="0" width="100%">
+        <tr>
+            <td width="300px"></td>
+            <td>
+                <form method="" action="" enctype="multipart/form-data" onsubmit="return validateform()">
+                    <fieldset>
+                        <legend>Degree</legend>
+                        <table>
+                        
+                 <tr>                   
+                  
+                    
+                        <td>
+
+                        <input type="checkbox"><label for=""  id="s6">SSC</label>
+                        <input type="checkbox"><label for=""  id="s7">HSC</label>                                   
+                        <input type="checkbox"><label for=""  id="s7">BSc</label><br>
+                        <input type="submit" name="submit"  value="Submit"><br>
+                      
+                    </td> 
+                </tr>
+
+                        </table>
+                       
+                    </fieldset>
+
+                     
+
+                </form>
+                <td width="300px"></td>
+            </td>
+            <td width="100px"></td>
+        </tr>
+    </table>
+
+    <script>
+        function validateform() {
+         ;
+            let val = document.getElementById("degree").value
+            if (val == "") {
+                document.getElementById("s6").innerHTML = "*fill up the degree";
+                return false;
+            }
+
+            
+    </script>

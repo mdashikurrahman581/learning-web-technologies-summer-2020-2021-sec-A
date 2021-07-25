@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOB</title>
+</head>
+
+<body>
+    <table border="0" width="100%">
+        <tr>
+            <td width="300px"></td>
+            <td>
+                <form method="" action="" enctype="multipart/form-data" onsubmit="return validateform()">
+                    <fieldset>
+                        <legend><b>Date of Birth</b></legend>
+                        <table>
+                        
+                <tr>                    
+                    
+                    <td>
+                     
+                      <input type="tel" name="day" size="1" id="s6"  value=""><b>/</b>
+                      <input type="tel" name="month" size="1" id="s7"  value=""><b>/</b>
+                      <input type="tel" name="year" size="1" id="s8"  value=""><i>(dd/mm/yyyy)</i> 
+                    </td> 
+                </tr>
+                            <tr>
+                                <td >
+                                    <hr>
+                                </td>
+                            </tr>
+
+                             <tr>
+                                <td >
+                                    <input type="submit" name="submit"  value="Submit">
+                                   
+                                </td>
+                            </tr>
+
+                        </table>
+                       
+                    </fieldset>
+                    
+                </form>
+                <td width="300px"></td>
+            </td>
+            <td width="100px"></td>
+        </tr>
+    </table>
+    <script>
+        function validateform() {
+           let lettersck = /^[1-31]+$/;
+           let lettersck2=/^[1-12]+$/;
+           let lettersck3 = /^[1900 - 2016]+$/;
+            let val = document.getElementById("dob").value
+            if (val != "lettersck") {
+                document.getElementById("s6").innerHTML = "*fill up the day properly";
+                return false;
+            }
+
+             if (val != "lettersck2") {
+                document.getElementById("s7").innerHTML = "*fill up the month properly";
+                return false;
+            }
+
+
+             if (val != "lettersck3") {
+                document.getElementById("s8").innerHTML = "*fill up the year properly";
+                return false;
+            }
+
+             if (val == "") {
+                document.getElementById("s8").innerHTML = "*invalid";
+                return false;
+            }
+    </script>
