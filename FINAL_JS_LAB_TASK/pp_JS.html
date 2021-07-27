@@ -131,7 +131,7 @@
                             <tr>
                                 <td></td>
                                 <td></td>
-                                
+
                                  <td >
                                     <input type="submit" name="submit" value="Submit">
                                     <input type="reset" value="reset">
@@ -149,6 +149,10 @@
         function validateform() {
             let lettersck = /^[A-Za-z.-]+$/;
             let val = document.getElementById("name").value
+            let lettersck = /^[a-z.@]+$/;
+            let val2 = document.getElementById("email").value
+
+            let val3 = document.getElementById("gender").value
             if (val == "") {
                 document.getElementById("s1").innerHTML = "*fill out name field";
                 return false;
@@ -164,6 +168,69 @@
 
             }
         }
+
+
+
+       
+            if (val2 == "") {
+                document.getElementById("s3").innerHTML = "*fill out email field";
+                return false;
+            }
+
+            if (val3 == "") {
+                document.getElementById("s1").innerHTML = "*Select one";
+                return false;
+          
+        }
+
+           let lettersck21 = /^[1-31]+$/;
+           let lettersck22=/^[1-12]+$/;
+           let lettersck33 = /^[1900 - 2016]+$/;
+            let val8 = document.getElementById("dob").value
+            if (val8 != "lettersck") {
+                document.getElementById("s6").innerHTML = "*fill up the day properly";
+                return false;
+            }
+
+             if (val8 != "lettersck2") {
+                document.getElementById("s7").innerHTML = "*fill up the month properly";
+                return false;
+            }
+
+
+             if (val8 != "lettersck3") {
+                document.getElementById("s8").innerHTML = "*fill up the year properly";
+                return false;
+            }
+
+             if (val8 == "") {
+                document.getElementById("s8").innerHTML = "*invalid";
+                return false;
+            }
+
+             let val9 = document.getElementById("bloodgroup").value
+            if (val9 == "") {
+                document.getElementById("s6").innerHTML = "*Select the Blood group";
+                return false;
+            }
+           let val88 = document.getElementById("degree").value
+            if (val88 == "") {
+                document.getElementById("s6").innerHTML = "*fill up the degree";
+                return false;
+            }
+
+            let val11 = document.getElementById("id").value
+            let val211 = document.getElementById("profilePic").value
+            if (val11 == "") {
+                document.getElementById("s6").innerHTML = "invalid id";
+                return false;
+            }
+            if (val211 == "") {
+                document.getElementById("s6").innerHTML = "Invalid profile picture";
+                return false;
+            }
+
+
     </script>
 </body>
 
