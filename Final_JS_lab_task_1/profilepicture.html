@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile picture</title>
+</head>
+
+<body>
+    <table border="0" width="100%">
+        <tr>
+            <td width="300px"></td>
+            <td>
+                <form method="" action="" enctype="multipart/form-data" onsubmit="return validateform()">
+                    
+                         <fieldset >
+                            <legend>Profile Picture</legend>
+                        <table>
+                           <tr>
+                                <td>User Id
+                               
+                                    <input type="text" name="id" id="s2"><span id="s2"></span>
+                                </td>
+                            </tr>
+              
+                            <tr>
+                                <td colspan="2">Picture
+                                  
+                                        
+                                        <input type="file" name="profilePic" id="s3" value="Browse...">
+                                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+
+                              <tr>                   
+                  
+                    
+                        <td>
+
+                    
+                        <input type="submit" name="submit"  value="Submit"><br>
+                      
+                    </td> 
+                </tr>
+
+                        </table>
+                       
+                   
+ </fieldset>
+                     
+
+                </form>
+                <td width="300px"></td>
+            </td>
+            <td width="100px"></td>
+        </tr>
+    </table>
+
+    <script>
+        function validateform() {
+         ;
+            let val = document.getElementById("id").value
+             let val2 = document.getElementById("profilePic").value
+            if (val == "") {
+                document.getElementById("s6").innerHTML = "invalid id";
+                return false;
+            }
+            if (val2 == "") {
+                document.getElementById("s6").innerHTML = "Invalid profile picture";
+                return false;
+            }
+
+
+            
+    </script>

@@ -1,0 +1,65 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender</title>
+</head>
+
+<body>
+    <table border="0" width="100%">
+        <tr>
+            <td width="300px"></td>
+            <td>
+                <form method="" action="" enctype="multipart/form-data" onsubmit="return validateform()">
+                    <fieldset>
+                        <legend><b>Gender</b></legend>
+                        <table border="0">
+                         <tr>
+                                <td colspan="2">
+                                    
+                                        
+                                        <input type="radio" name="gender" value="Male" id="">Male
+                                        <input type="radio" name="gender" value="Female" id="">Female
+                                        <input type="radio" name="gender" value="Other" id="">Other
+                                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <hr>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td colspan="2">
+                                    <input type="submit" name="submit" value="Submit">
+                                   
+                                </td>
+                            </tr>
+
+                        </table>
+                       
+                    </fieldset>
+                    
+                </form>
+                <td width="300px"></td>
+            </td>
+            <td width="100px"></td>
+        </tr>
+    </table>
+    <script>
+        function validateform() {
+           
+            let val = document.getElementById("gender").value
+            if (val == "") {
+                document.getElementById("s1").innerHTML = "*Select one";
+                return false;
+          
+        }
+    </script>
+</body>
+
+</html>
